@@ -1,0 +1,75 @@
+
+{
+  "project-settings": {
+    "code-owner": "React App",
+    "bundle-path": "../core/src/main/java",
+    "test-path": "../core/src/test/java",
+    "apps-path": "../ui.apps/src/main/content/jcr_root/apps",
+    "component-path": "reactapp",
+    "model-interface-pkg": "com.reactapp.core.models",
+    "model-impl-pkg": "com.reactapp.core.models.impl"
+  },
+    "name": "page-error",
+    "title": "Page Error Component",
+    "group": "React App - Content",
+    "type": "components",
+    "options": {
+      "js": false,
+      "jstxt": false,
+      "css": false,
+      "csstxt": false,
+      "html": false,
+      "html-content": false,
+      "slingmodel": true,
+      "testclass": false,
+      "junit-major-version": 5,
+      "content-exporter": true,
+      "model-adaptables": [
+        "request"
+      ],
+      "generic-javadoc": false,
+      "properties-tabs": [
+        {
+          "id": "tab-1",
+          "label": "Text Tab",
+          "fields": [
+            "textfieldTest",
+            "textareaTest"
+          ]
+        },
+        {
+          "id": "tab-2",
+          "label": "Img Tab",
+          "fields": [
+            "imageTest"
+          ]
+        }
+      ],
+      "properties": [
+        {
+          "field": "textfieldTest",
+          "description": "Adds a fieldDescription tooltip",
+          "javadoc": "Returns a text value tooltip used somewhere in the component",
+          "type": "textfield",
+          "label": "Textfield Test",
+          "json-property": "textfieldTest",
+          "json-expose": true
+        },
+       
+        {
+          "field": "textareaTest",
+          "type": "textarea",
+          "label": "Textarea Test",
+          "json-property": "textareaTest",
+          "json-expose": true
+        },
+        {
+          "field": "imageTest",
+          "type": "image",
+          "label": "Image Test",
+          "json-property": "imageTest",
+          "json-expose": true
+        }
+      ]
+    }
+  }

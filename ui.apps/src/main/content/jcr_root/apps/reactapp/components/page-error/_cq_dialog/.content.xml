@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+ |  ***********************************************************************
+ |  React App CONFIDENTIAL
+ |  ___________________
+ |
+ |  Copyright 2022 React App
+ |  All Rights Reserved.
+ |
+ |  NOTICE:  All information contained herein is, and remains the property
+ |  of React App and its suppliers, if any. The intellectual and
+ |  technical concepts contained herein are proprietary to React App
+ |  and its suppliers and are protected by trade secret or copyright law.
+ |  Dissemination of this information or reproduction of this material
+ |  is strictly forbidden unless prior written permission is obtained
+ |  from React App.
+ |  ***********************************************************************
+-->
+<jcr:root xmlns:jcr="http://www.jcp.org/jcr/1.0"
+          xmlns:cq="http://www.day.com/jcr/cq/1.0"
+          xmlns:granite="http://www.adobe.com/jcr/granite/1.0"
+          xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+          xmlns:sling="http://sling.apache.org/jcr/sling/1.0"
+          jcr:primaryType="nt:unstructured"
+          jcr:title="Page Error Component"
+          sling:resourceType="cq/gui/components/authoring/dialog">
+   <content jcr:primaryType="nt:unstructured"
+            sling:resourceType="granite/ui/components/coral/foundation/container">
+      <items jcr:primaryType="nt:unstructured">
+         <tabs jcr:primaryType="nt:unstructured"
+               sling:resourceType="granite/ui/components/coral/foundation/tabs">
+            <items jcr:primaryType="nt:unstructured">
+               <tab-1 jcr:primaryType="nt:unstructured"
+                      jcr:title="Text Tab"
+                      sling:resourceType="granite/ui/components/coral/foundation/container">
+                  <layout jcr:primaryType="nt:unstructured"
+                          sling:resourceType="granite/ui/components/coral/foundation/fixedcolumns"/>
+                  <items jcr:primaryType="nt:unstructured">
+                     <column jcr:primaryType="nt:unstructured"
+                             sling:resourceType="granite/ui/components/coral/foundation/container">
+                        <items jcr:primaryType="nt:unstructured">
+                           <textfieldTest cq-msm-lockable="./textfieldTest"
+                                          fieldDescription="Adds a fieldDescription tooltip"
+                                          fieldLabel="Textfield Test"
+                                          jcr:primaryType="nt:unstructured"
+                                          name="./textfieldTest"
+                                          sling:resourceType="granite/ui/components/coral/foundation/form/textfield"/>
+                           <textareaTest cq-msm-lockable="./textareaTest"
+                                         fieldLabel="Textarea Test"
+                                         jcr:primaryType="nt:unstructured"
+                                         name="./textareaTest"
+                                         sling:resourceType="granite/ui/components/coral/foundation/form/textarea"/>
+                        </items>
+                     </column>
+                  </items>
+               </tab-1>
+               <tab-2 jcr:primaryType="nt:unstructured"
+                      jcr:title="Img Tab"
+                      sling:resourceType="granite/ui/components/coral/foundation/container">
+                  <layout jcr:primaryType="nt:unstructured"
+                          sling:resourceType="granite/ui/components/coral/foundation/fixedcolumns"/>
+                  <items jcr:primaryType="nt:unstructured">
+                     <column jcr:primaryType="nt:unstructured"
+                             sling:resourceType="granite/ui/components/coral/foundation/container">
+                        <items jcr:primaryType="nt:unstructured">
+                           <imageTestResType jcr:primaryType="nt:unstructured"
+                                             name="./imageTest/sling:resourceType"
+                                             sling:resourceType="granite/ui/components/coral/foundation/form/hidden"
+                                             value="core/wcm/components/image/v2/image"/>
+                           <imageTest allowUpload="{Boolean}false"
+                                      autoStart="{Boolean}false"
+                                      class="cq-droptarget"
+                                      cq-msm-lockable="./imageTest/file"
+                                      fieldLabel="Image Test"
+                                      fileNameParameter="./imageTest/fileName"
+                                      fileReferenceParameter="./imageTest/fileReference"
+                                      jcr:primaryType="nt:unstructured"
+                                      mimeTypes="[image/gif,image/jpeg,image/png,image/webp,image/tiff,image/svg+xml]"
+                                      multiple="{Boolean}false"
+                                      name="./imageTest/file"
+                                      sling:resourceType="cq/gui/components/authoring/dialog/fileupload"
+                                      title="Drag to select image"
+                                      uploadUrl="${suffix.path}"
+                                      useHTML5="{Boolean}true"/>
+                        </items>
+                     </column>
+                  </items>
+               </tab-2>
+            </items>
+         </tabs>
+      </items>
+   </content>
+</jcr:root>
