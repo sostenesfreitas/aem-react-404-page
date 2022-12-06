@@ -1,0 +1,73 @@
+
+{
+    "project-settings": {
+      "code-owner": "React App",
+      "bundle-path": "../core/src/main/java",
+      "test-path": "../core/src/test/java",
+      "apps-path": "../ui.apps/src/main/content/jcr_root/apps",
+      "component-path": "reactapp",
+      "model-interface-pkg": "com.reactapp.core.models",
+      "model-impl-pkg": "com.reactapp.core.models.impl"
+    },
+      "name": "page-search",
+      "title": "Page search",
+      "group": "React App - Content",
+      "type": "components",
+      "options": {
+        "js": false,
+        "jstxt": false,
+        "css": false,
+        "csstxt": false,
+        "html": false,
+        "html-content": false,
+        "slingmodel": true,
+        "testclass": false,
+        "junit-major-version": 5,
+        "content-exporter": true,
+        "model-adaptables": [
+          "request"
+        ],
+        "generic-javadoc": false,
+        "properties-tabs": [
+          {
+            "id": "tab-1",
+            "label": "Text Tab",
+            "fields": [
+              "textfieldTest1",
+              "textfieldTest2",
+              "textfieldTest3"
+            ]
+          }
+        ],
+        "properties": [
+          {
+            "field": "textfieldTest1",
+            "description": "Adds a fieldDescription tooltip",
+            "javadoc": "Returns a text value tooltip used somewhere in the component",
+            "type": "textfield",
+            "label": "Textfield Test",
+            "json-property": "textfieldTest1",
+            "json-expose": true
+          },
+          {
+            "field": "textfieldTest2",
+            "description": "Adds a fieldDescription tooltip",
+            "javadoc": "Returns a text value tooltip used somewhere in the component",
+            "type": "textfield",
+            "label": "Textfield Test",
+            "json-property": "textfieldTest2",
+            "json-expose": true
+          },
+          {
+            "field": "textfieldTest3",
+            "description": "Adds a fieldDescription tooltip",
+            "javadoc": "Returns a text value tooltip used somewhere in the component",
+            "type": "textfield",
+            "label": "Textfield Test",
+            "json-property": "textfieldTest3",
+            "json-expose": true
+          }
+          
+        ]
+      }
+    }

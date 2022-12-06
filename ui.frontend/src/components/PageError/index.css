@@ -7,7 +7,7 @@
   letter-spacing: -0.08em;
   text-transform: uppercase;
 
-  color: #333333;
+  color: #333333 !important;
 }
 
 .title {
@@ -15,7 +15,7 @@
   font-style: normal;
   font-weight: 700;
   letter-spacing: -0.035em;
-  color: #333333;
+  color: #333333 !important;
 }
 
 .text {
@@ -25,7 +25,7 @@
 
   /* Gray 2 */
 
-  color: #4f4f4f;
+  color: #4f4f4f !important;
 }
 
 button {
@@ -57,6 +57,7 @@ button {
     font-size: 18px;
     line-height: 27px;
     letter-spacing: -0.035em;
+    margin: 0 !important;
   }
 }
 
@@ -75,8 +76,11 @@ button {
     position: absolute;
     width: 133px;
     height: 25px;
-    left: 77px;
-    top: 40px;
+    top: 8px;
+    left: 16px;
+    font-size: 18px;
+    margin: 0;
+
   }
 
   .containerText {

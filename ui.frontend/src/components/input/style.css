@@ -1,0 +1,93 @@
+h1,
+p {
+  font-family: Lato;
+}
+
+.label-float {
+  width: 90%;
+}
+
+@media screen and (max-width: 1024px) {
+  .inputNew {
+    width: 250px !important;
+    margin-left: 20px !important;
+  }
+}
+
+.inputNew {
+  border: 1px solid #999;
+  border-radius: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  width: 300px;
+  margin-bottom: 10px;
+}
+
+input {
+  width: 100%;
+  height: 25px;
+  border: none;
+  font-size: 14px;
+  color: #ffff;
+  padding: 5px;
+  background: none;
+}
+
+input:focus {
+  border: none;
+  box-shadow: 0 0 0 0;
+  outline: 0;
+  width: 100%;
+}
+
+.inputNew {
+  position: relative;
+}
+
+.inputNew input {
+  border: 0;
+  outline: none;
+  font-size: 14px;
+  transition: all 0.3s ease-out;
+  -webkit-transition: all 0.3s ease-out;
+  -moz-transition: all 0.3s ease-out;
+  -webkit-appearance: none;
+  border-radius: 0;
+  width: 100%;
+}
+
+.inputNew input::placeholder {
+  color: transparent;
+}
+
+svg {
+  color: #e0e0e0;
+}
+
+.inputNew label {
+  pointer-events: none;
+  color: #e0e0e0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin-top: 15px;
+  margin-left: 10px;
+  transition: all 0.3s ease-out;
+  -webkit-transition: all 0.3s ease-out;
+  -moz-transition: all 0.3s ease-out;
+}
+
+.inputNew input:required:invalid + label:before {
+  content: "*";
+}
+.inputNew input:focus + label,
+.inputNew input:not(:placeholder-shown) + label {
+  font-size: 13px;
+  margin-left: 5px;
+  margin-top: -8px;
+  color: #ffff;
+  background: #26292c;
+  padding: 0px 5px;
+}
